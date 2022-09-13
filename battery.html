@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<style>
+#div1 {
+  font-size:48px;
+}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+
+<div id="div1" class="fa"></div>
+
+<script>
+function chargebattery() {
+  var a;
+  a = document.getElementById("div1");
+  a.innerHTML = " 0%";
+  setTimeout(function () {
+      a.innerHTML = " 25%";
+    }, 1000);
+  setTimeout(function () {
+      a.innerHTML = " 50%";
+    }, 2000);
+  setTimeout(function () {
+      a.innerHTML = " 75%";
+    }, 3000);
+  setTimeout(function () {
+      a.innerHTML = " 100%";
+    }, 4000);
+}
+chargebattery();
+setInterval(chargebattery, 5000);
+</script>
+
+</body>
+</html>
